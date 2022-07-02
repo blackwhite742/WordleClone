@@ -1,0 +1,61 @@
+.cell{
+    display: inline-flex;
+    width: 3vw;
+    height: 3vw;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 3px;
+    color:black;
+}
+
+.nomatch{
+    background-color: grey;
+    animation-name:fadeInGrey;
+    animation-duration: 1s;
+}
+
+.match{
+    background-color: green;
+    animation-name:fadeInGreen;
+    animation-duration: 1s;
+}
+
+.contains{
+    background-color:yellow;
+    animation-name:fadeInYellow;
+    animation-duration: 1s;
+}
+
+@media only screen and (max-width: 540px) {
+    .cell {
+        width: 15vw;
+        height: 15vw;
+    }
+  }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .cell {
+        width: 15vw;
+        height: 10vw;
+    }
+}
+
+
+@keyframes fadeInYellow {
+    from {background-color: transparent;}
+    to {background-color: yellow;}
+}
+
+@keyframes fadeInGreen {
+    from {background-color: transparent;}
+    to {background-color: green;}
+}
+
+@keyframes fadeInGrey {
+    from {background-color: transparent;}
+    to {background-color: grey;}
+}

@@ -1,38 +1,36 @@
 .App {
   text-align: center;
+  height:100vh
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.answer{
+  color:red
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.guessSpace{
+  width:50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:1em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.topBar{
+  margin-bottom: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+.cheat{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color:#1976d2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.cheat:hover{
+  cursor:pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .guessSpace {
+    width:80%;
   }
 }
