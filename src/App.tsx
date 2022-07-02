@@ -85,7 +85,7 @@ function App() {
       document.removeEventListener("keydown",keyDownHandler);
     }
   },[textInput,guesses,attempt,gameOver,win,chosenWord]);
-
+  //te
   //Lose condition
   useEffect(()=>{
     if(attempt===6 && !gameOver){
